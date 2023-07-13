@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
@@ -9,6 +9,7 @@
   <ItemGroup>
     <None Remove="Protos\authentication.proto" />
     <None Remove="Protos\calculation.proto" />
+    <None Remove="Protos\multiply.proto" />
   </ItemGroup>
 
   <ItemGroup>
@@ -17,6 +18,7 @@
     <Protobuf Include="Protos\greet.proto" GrpcServices="Server" />
 	<Protobuf Include="Protos\sample.proto" GrpcServices="Server" />
 	<Protobuf Include="Protos\product.proto" GrpcServices="Server" />
+    <Protobuf Include="Protos\multiply.proto" GrpcServices="Client" />
   </ItemGroup>
 
   <ItemGroup>
